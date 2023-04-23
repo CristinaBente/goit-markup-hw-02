@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --text-font-family: "Roboto", sans-serif;
+  --text-color: #757575;
+  --link-active-color: #2196f3;
+  --link-color: #212121;
+  --background-color: #ffffff;
+}
+body {
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+}
+h1,
+h2,
+h4 {
+  font-family: var(--text-font-family);
+  font-weight: 700;
+}
+.global-header a {
+  background: var(--background-color);
+  font-family: var(--text-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--link-color);
+}
+h3,
+.global-header .main-navigation .webstudio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+ul {
+  list-style-type: none;
+}
+.global-header a.phone-number {
+  color: #757575;
+}
+.section-heading {
+  background: #2f303a;
+  font-family: var(--text-font-family);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button {
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  cursor: pointer;
+}
+.article h4 {
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.article p {
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.what-we-do h2,
+.our-team h2 {
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our-team li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our-team li em {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.details {
+  background: #2f303a;
+}
+.adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.adress a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress a:hover,
+.adress a:focus,
+.global-header .main-navigation a:hover,
+.global-header .main-navigation a:focus,
+.global-header a.email-active:hover,
+.global-header a.email-active:focus,
+.global-header a.phone-number:hover,
+.global-header a.phone-number:focus {
+  color: var(--link-active-color);
+}
+.buttons {
+  font-family: var(--text-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+.images li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.images li em {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
