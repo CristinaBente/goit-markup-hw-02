@@ -16,6 +16,37 @@ h4 {
   font-family: var(--text-font-family);
   font-weight: 700;
 }
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.section > div {
+  padding: 94px 215px 94px 215px;
+}
+.global-header {
+  padding: 32px 215px;
+}
+
+.global-header .main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-navigation ul {
+  display: flex;
+  padding-inline-start: 0;
+  margin-left: 93px;
+}
+.global-header .main-navigation ul li + li {
+  margin-left: 50px;
+}
+.main-navigation .email-phone {
+  display: flex;
+}
+.main-navigation .email-phone a + a {
+  margin-left: 40px;
+}
+
 .global-header a {
   background: var(--background-color);
   font-family: var(--text-font-family);
@@ -24,17 +55,21 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-color);
+  text-decoration: none;
 }
-h3,
-.global-header .main-navigation .webstudio {
+
+.global-header .webstudio {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-left: 215px;
+  color: #000;
+}
+.web {
   color: #2196f3;
 }
-
 ul {
   list-style-type: none;
 }
@@ -51,19 +86,27 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  padding: 200px 452px 280px 452px;
+  flex-direction: column;
+  align-items: center;
 }
 .button {
   font-family: var(--text-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   cursor: pointer;
+}
+.article {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .article h4 {
   font-family: var(--text-font-family);
@@ -81,6 +124,21 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
+  display: flex;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.what-we-do {
+  margin-top: 94px;
+}
+.what-we-do ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
 }
 .what-we-do h2,
 .our-team h2 {
@@ -92,6 +150,11 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.our-team {
+  display: flex;
+  margin-top: 94px;
+}
+
 .our-team li {
   font-weight: 500;
   font-size: 16px;
@@ -99,6 +162,10 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
 }
 .our-team li em {
   font-weight: 400;
@@ -111,15 +178,28 @@ ul {
 .details {
   background: #2f303a;
 }
+.details .webstudio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-left: 215px;
+  color: #000;
+  text-decoration: none;
+}
+
 .adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-decoration: none;
 }
 .adress a {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .adress a:hover,
