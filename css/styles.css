@@ -220,16 +220,52 @@ ul {
 .global-header a.phone-number:focus {
   color: var(--link-active-color);
 }
-.buttons {
+.portfolio-buttons button {
   font-family: var(--text-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: 8px;
 }
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-left: 542px;
+  margin-right: 542px;
+  margin-top: 94px;
+  margin-bottom: 20px;
+  padding-inline-start: 0px;
+}
+.portfolio-buttons button:hover,
+.portfolio-buttons button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
+    0px 2px 2px #0000001f;
+}
+.images {
+  display: flex;
+  margin-top: 56px;
+}
+.images ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 215px;
+  margin-right: 215px;
+  padding-inline-start: 0;
+  padding-bottom: 94px;
+  gap: 30px;
+}
+
 .images li {
   font-weight: 700;
   font-size: 18px;
