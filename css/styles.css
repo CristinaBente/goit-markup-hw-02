@@ -27,10 +27,13 @@ h4 {
   padding: 32px 215px;
 }
 
+.global-header .container {
+  display: flex;
+}
+.global-header .webstudio,
 .global-header .main-navigation {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .main-navigation ul {
   display: flex;
