@@ -17,83 +17,124 @@ h4 {
   font-weight: 700;
 }
 .container {
-  max-width: 1600px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section > div {
   padding: 94px 215px 94px 215px;
 }
-.global-header {
-  padding: 32px 215px;
+.global-header-content {
+  display: flex;
+  padding: 32px 0;
 }
 
-.global-header .container {
-  display: flex;
-}
-.global-header .webstudio,
-.global-header .main-navigation {
+.header-container {
   display: flex;
   justify-content: space-between;
 }
-.main-navigation ul {
-  display: flex;
-  padding-inline-start: 0;
-  margin-left: 93px;
-}
-.global-header .main-navigation ul li + li {
-  margin-left: 50px;
-}
-.main-navigation .email-phone {
-  display: flex;
-}
-.main-navigation .email-phone a + a {
-  margin-left: 40px;
-}
 
-.global-header a {
-  background: var(--background-color);
-  font-family: var(--text-font-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--link-color);
-  text-decoration: none;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.global-header .webstudio {
+.nav-links-list {
+  margin-left: 100px;
+  display: flex;
+}
+.nav-logo-text {
   font-family: "Raleway";
-  font-weight: 700;
+  color: #2196f3;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-left: 215px;
-  color: #000;
+  display: block;
 }
-.web {
+
+.nav-links-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-contats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-contats-links {
+  font-weight: 500;
+  color: #757575;
+  padding: 32px 0px 31px 0px;
+  display: block;
+}
+.nav-contats-links:hover,
+.nav-contats-links:focus {
   color: #2196f3;
 }
+.nav-links {
+  color: #212121;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 32px 0px 31px 0px;
+  display: block;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  color: #2196f3;
+}
+
+.nav-links-current {
+  color: #2196f3;
+}
+
+.nav-container-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 ul {
   list-style-type: none;
 }
-.global-header a.phone-number {
-  color: #757575;
+.hero {
+  padding: 200px 0 200px 0px;
+  background-color: #2f303a;
 }
-.section-heading {
-  background: #2f303a;
-  font-family: var(--text-font-family);
+.hero-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container-text {
+  color: white;
   font-weight: 900;
   font-size: 44px;
+  font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  display: flex;
-  padding: 200px 452px 280px 452px;
-  flex-direction: column;
-  align-items: center;
+  height: 127.2px;
+  margin-bottom: 40px;
+  text-align: center;
 }
+.hero-container-button {
+  background-color: #2196f3;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero-container-button:hover,
+.hero-container-button:focus {
+  background-color: #188ce8;
+}
+
 .button {
   font-family: var(--text-font-family);
   font-weight: 700;
@@ -214,13 +255,7 @@ ul {
 }
 
 .adress a:hover,
-.adress a:focus,
-.global-header .main-navigation a:hover,
-.global-header .main-navigation a:focus,
-.global-header a.email-active:hover,
-.global-header a.email-active:focus,
-.global-header a.phone-number:hover,
-.global-header a.phone-number:focus {
+.adress a:focus {
   color: var(--link-active-color);
 }
 .portfolio-buttons button {
@@ -228,7 +263,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
@@ -262,8 +296,8 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin-left: 0;
+  margin-right: 0;
   padding-inline-start: 0;
   padding-bottom: 94px;
   gap: 30px;
