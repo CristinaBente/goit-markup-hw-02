@@ -92,13 +92,19 @@ h4 {
 .nav-container-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.nav-links-item svg {
+  width: 10px;
+  height: 16px;
+}
 ul {
   list-style-type: none;
 }
 .hero {
   padding: 200px 0 200px 0px;
   background-color: #2f303a;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Bg_hero.jpg");
+  background-size: cover;
 }
 .hero-container {
   align-items: center;
@@ -145,6 +151,32 @@ ul {
   background: #2196f3;
   cursor: pointer;
 }
+.card {
+  background: #ffffff;
+}
+.icon-article svg {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: #212121;
+}
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  background: #ffffff;
+}
+.icons-list .icon {
+  width: 44px;
+  height: 44px;
+  color: black;
+}
 .article {
   display: flex;
   justify-content: center;
@@ -185,7 +217,8 @@ ul {
   margin-top: 50px;
 }
 .what-we-do h2,
-.our-team h2 {
+.our-team h2,
+.regular-customers h2 {
   font-family: var(--text-font-family);
   font-weight: 700;
   font-size: 36px;
@@ -194,7 +227,8 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.our-team h2 {
+.our-team h2,
+.regular-customers h2 {
   margin-top: 94px;
 }
 .our-team {
