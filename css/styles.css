@@ -92,10 +92,20 @@ h4 {
 .nav-container-item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-links-item svg {
-  width: 10px;
-  height: 16px;
+.nav-links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.nav-links-item svg {
+  width: 16px;
+  height: 12px;
+}
+.nav-links-item a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -169,13 +179,13 @@ ul {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 16px;
   background: #ffffff;
 }
 .icons-list .icon {
-  width: 44px;
-  height: 44px;
-  color: black;
+  width: 10px;
+  height: 20px;
+  color: #afb1b8;
 }
 .article {
   display: flex;
@@ -262,6 +272,20 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.icons-clients {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.icons-clients svg {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
 .details {
   background: #2f303a;
 }
