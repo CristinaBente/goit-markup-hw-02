@@ -184,7 +184,8 @@ ul {
   padding-left: 215px;
   padding-right: 215px;
 }
-.article h4 {
+.article h4,
+.find-us-on h4 {
   font-family: var(--text-font-family);
   font-weight: 700;
   font-size: 14px;
@@ -292,6 +293,19 @@ ul {
 .adress a:focus {
   color: var(--link-active-color);
 }
+.wb {
+  margin-top: 60px;
+}
+
+.find-us-on h4 {
+  color: #ffffff;
+  margin-left: 156px;
+  margin-top: 75px;
+}
+.footer-details {
+  display: flex;
+}
+
 .portfolio-buttons button {
   font-family: var(--text-font-family);
   font-weight: 500;
