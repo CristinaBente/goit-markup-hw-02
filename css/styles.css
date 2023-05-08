@@ -272,18 +272,34 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.regular-customers {
+  padding-bottom: 94px;
+}
+
 .icons-clients {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.icons-clients svg {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+
+.icons-clients li {
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-clients svg {
+  fill: #afb1b8;
+}
+
+.icons-clients:hover,
+.icons-clients:focus svg {
+  fill: #2196f3;
 }
 
 .details {
