@@ -163,6 +163,8 @@ ul {
 }
 .card {
   background: #ffffff;
+  width: 270px;
+  padding-bottom: 30px;
 }
 .icon-article svg {
   width: 270px;
@@ -177,13 +179,30 @@ ul {
 }
 .icons-list {
   display: flex;
+  align-self: center;
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
   background: #ffffff;
 }
+
 .icons-list .icon {
-  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+}
+
+.footer-details .icons-list {
+  background: transparent;
+}
+
+.footer-details .icons-list .icon {
+  justify-content: space-between;
+}
+
+.icons-list .icon svg {
   height: 20px;
   color: #afb1b8;
 }
@@ -339,9 +358,13 @@ ul {
 
 .find-us-on h4 {
   color: #ffffff;
+}
+
+.find-us-on {
   margin-left: 156px;
   margin-top: 75px;
 }
+
 .footer-details {
   display: flex;
 }
