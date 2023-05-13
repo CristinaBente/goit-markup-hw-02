@@ -163,6 +163,18 @@ ul {
 }
 .card {
   background: #ffffff;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-portfolio {
+  background: #ffffff;
+  padding-bottom: 30px;
+}
+.card-portfolio:hover .card-portfolio:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .icon-article svg {
   width: 270px;
@@ -177,13 +189,37 @@ ul {
 }
 .icons-list {
   display: flex;
+  align-self: center;
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
   background: #ffffff;
 }
 .icons-list .icon {
-  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  gap: 10px;
+}
+.icons-list svg:hover,
+.icons-list svg:focus {
+  background: #2196f3;
+}
+.footer-details .icons-list {
+  background: transparent;
+}
+
+.footer-details .icons-list .icon {
+  justify-content: space-between;
+}
+.footer-details .icons-list .icon:hover,
+.footer-details .icons-list .icon:focus {
+  background: #2196f3;
+}
+
+.icons-list .icon svg {
   height: 20px;
   color: #afb1b8;
 }
@@ -272,18 +308,31 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.regular-customers {
+  padding-bottom: 94px;
+}
 .icons-clients {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.icons-clients svg {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+.icons-clients li {
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-clients svg {
+  fill: #afb1b8;
+}
+
+.icons-clients:hover,
+.icons-clients:focus svg {
+  fill: #2196f3;
 }
 
 .details {
@@ -323,6 +372,8 @@ ul {
 
 .find-us-on h4 {
   color: #ffffff;
+}
+.find-us-on {
   margin-left: 156px;
   margin-top: 75px;
 }
