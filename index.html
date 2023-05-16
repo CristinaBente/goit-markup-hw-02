@@ -58,7 +58,7 @@
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button class="hero-container-button" type="button">
+          <button data-modal-open class="hero-container-button" type="button">
             Request Our Service
           </button>
         </div>
@@ -116,6 +116,7 @@
                 alt="Lucrez la calculator"
                 width="370"
               />
+              <p class="label">DESKTOP APPS</p>
             </li>
             <li>
               <img
@@ -123,9 +124,11 @@
                 alt="Verific telefonul"
                 width="370"
               />
+              <p class="label">Mobile APPS</p>
             </li>
             <li>
               <img src="./images/colors.png" alt="Culori" width="370" />
+              <p class="label">DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
@@ -422,5 +425,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

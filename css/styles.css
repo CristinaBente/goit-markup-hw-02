@@ -5,6 +5,7 @@
   --link-active-color: #2196f3;
   --link-color: #212121;
   --background-color: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: var(--text-font-family);
@@ -71,6 +72,8 @@ h4 {
 .nav-contats-links:hover,
 .nav-contats-links:focus {
   color: #2196f3;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-links {
   color: #212121;
@@ -78,11 +81,29 @@ h4 {
   text-decoration: none;
   padding: 32px 0px 31px 0px;
   display: block;
+  position: relative;
+}
+.nav-links:hover::after,
+.nav-links:focus::after {
+  display: inline;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-links::after {
+  display: none;
+  content: " ";
+  height: 4px;
+  background: #2196f3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 2px;
 }
 
 .nav-links:hover,
 .nav-links:focus {
   color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links-current {
@@ -149,6 +170,7 @@ ul {
 .hero-container-button:hover,
 .hero-container-button:focus {
   background-color: #188ce8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -171,10 +193,46 @@ ul {
 .card-portfolio {
   background: #ffffff;
   padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(33, 150, 243, 0.9);
+  color: #fff;
+  text-align: center;
+  top: 100%;
+  overflow: hidden;
+}
+.overlay p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 322px;
+  height: 140px;
+  left: 239px;
+  top: 325px;
+  text-align: left;
+  padding: 63px 24px;
+}
+.card-portfolio:hover .overlay {
+  top: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-portfolio:hover .card-portfolio:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-article svg {
   width: 270px;
@@ -206,6 +264,7 @@ ul {
 .icons-list svg:hover,
 .icons-list svg:focus {
   background: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-details .icons-list {
   background: transparent;
@@ -217,6 +276,7 @@ ul {
 .footer-details .icons-list .icon:hover,
 .footer-details .icons-list .icon:focus {
   background: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-list .icon svg {
@@ -263,6 +323,27 @@ ul {
   gap: 30px;
   margin-top: 50px;
 }
+.what-we-do li {
+  position: relative;
+}
+.what-we-do li > .label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 16px;
+  padding: 27px 132px;
+  background: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .what-we-do h2,
 .our-team h2,
 .regular-customers h2 {
@@ -333,6 +414,7 @@ ul {
 .icons-clients:hover,
 .icons-clients:focus svg {
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .details {
@@ -365,6 +447,7 @@ ul {
 .adress a:hover,
 .adress a:focus {
   color: var(--link-active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wb {
   margin-top: 60px;
@@ -379,6 +462,42 @@ ul {
 }
 .footer-details {
   display: flex;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop-content {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons button {
@@ -409,6 +528,7 @@ ul {
   color: #ffffff;
   box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
     0px 2px 2px #0000001f;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .images {
   display: flex;
