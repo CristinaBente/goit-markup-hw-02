@@ -193,6 +193,8 @@ ul {
 .card-portfolio {
   background: #ffffff;
   padding-bottom: 30px;
+}
+.card-image {
   position: relative;
   overflow: hidden;
 }
@@ -223,7 +225,7 @@ ul {
   left: 239px;
   top: 325px;
   text-align: left;
-  padding: 63px 24px;
+  padding: 63px 24px 91px 24px;
 }
 .card-portfolio:hover .overlay {
   top: 0;
@@ -326,6 +328,7 @@ ul {
 .what-we-do li {
   position: relative;
 }
+
 .what-we-do li > .label {
   position: absolute;
   bottom: 0;
@@ -342,6 +345,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .what-we-do h2,
@@ -464,6 +469,7 @@ ul {
   display: flex;
 }
 .backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
