@@ -334,7 +334,7 @@ ul {
   bottom: 0;
   right: 0;
   height: 16px;
-  padding: 27px 132px;
+  padding: 27px 0;
   background: rgba(47, 48, 58, 0.8);
   font-family: "Roboto";
   font-style: normal;
@@ -347,6 +347,8 @@ ul {
   color: #ffffff;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .what-we-do h2,
@@ -493,6 +495,76 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
+  padding: 40px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-group + .form-group {
+  margin-top: 10px;
+}
+.form-group > *:nth-child(2) {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-group > *:nth-child(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+.form-checkbox {
+  flex-direction: row;
+  gap: 8px;
+}
+.form-checkbox > *:nth-child(2) {
+  border: none;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.btn-submit {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 80px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  max-width: 200px;
+  cursor: pointer;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background: #064579;
+}
+.form-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 .close-btn {
   position: absolute;

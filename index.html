@@ -428,6 +428,43 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
         <button class="close-btn" data-modal-close>&times;</button>
+        <form class="form">
+          <p>Leave your information and we'll call you back</p>
+          <div role="group" class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <svg>
+              <use href="./icons/symbol-defs.svg"></use>
+            </svg>
+          </div>
+          <div role="group" class="form-group">
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" name="telephone" />
+          </div>
+          <div role="group" class="form-group">
+            <label for="email">E-mail</label>
+            <input type="e-mail" id="email" name="email" />
+          </div>
+          <div role="group" class="form-group">
+            <label for="comments">Comments</label>
+            <textarea
+              class="textarea"
+              rows="5"
+              name="comments"
+              placeholder="Enter the text"
+            >
+            </textarea>
+          </div>
+          <label class="form-group form-checkbox">
+            <input type="checkbox" name="acceptTerms" />
+            <span>
+              I agree with the letter and accept the Terms and Conditions</span
+            >
+          </label>
+          <div class="form-controls">
+            <button type="submit" class="btn-submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
