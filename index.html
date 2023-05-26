@@ -434,7 +434,7 @@
                 placeholder="E-mail"
               />
               <button class="button subscribe-btn" type="submit">
-                Subscribe
+                <span>Subscribe</span>
                 <svg class="subscribe-icon" width="24" height="24">
                   <use href="./icon-subs/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
@@ -453,21 +453,21 @@
           </p>
           <div role="group" class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
+            <input class="input" type="text" id="name" name="name" />
             <svg class="input-icon">
               <use href="./icons/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
           <div role="group" class="form-group">
             <label for="telephone">Telephone</label>
-            <input type="tel" id="telephone" name="telephone" />
+            <input class="input" type="tel" id="telephone" name="telephone" />
             <svg class="input-icon">
               <use href="./icons/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
           <div role="group" class="form-group">
             <label for="email">E-mail</label>
-            <input type="e-mail" id="email" name="email" />
+            <input class="input" type="e-mail" id="email" name="email" />
             <svg class="input-icon">
               <use href="./icons/symbol-defs.svg#icon-email"></use>
             </svg>
@@ -482,11 +482,16 @@
             >
             </textarea>
           </div>
-          <label class="form-group form-checkbox">
-            <svg class="terms-icon" width="16" height="15">
+          <label class="form-checkbox">
+            <input
+              type="checkbox"
+              class="checkmark"
+              name="agreement"
+              value="agree"
+            />
+            <svg class="icon" width="16" height="16">
               <use href="./icon-check/symbol-defs.svg#icon-icon-check"></use>
             </svg>
-
             <span class="terms-cond">
               I agree with the letter and accept the<a
                 class="terms-cond-link"
