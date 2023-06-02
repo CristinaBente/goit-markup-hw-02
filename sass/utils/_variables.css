@@ -1,0 +1,8 @@
+:root {
+  --text-font-family: "Roboto", sans-serif;
+  --text-color: #757575;
+  --link-active-color: #2196f3;
+  --link-color: #212121;
+  --background-color: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
