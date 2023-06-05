@@ -168,11 +168,11 @@
   background: #ffffff;
   padding-bottom: 30px;
 }
-.card-image {
+.card-portofolio__image {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.project-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -184,7 +184,7 @@
   top: 100%;
   overflow: hidden;
 }
-.overlay p {
+.project-overlay__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -201,7 +201,7 @@
   text-align: left;
   padding: 63px 24px 91px 24px;
 }
-.card-portfolio:hover .overlay {
+.card-portfolio:hover .project__overlay {
   top: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -714,7 +714,7 @@
   display: flex;
   margin-top: 56px;
 }
-.images ul {
+.project {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -726,14 +726,14 @@
   gap: 30px;
 }
 
-.images li {
+.project__item {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
-.images li em {
+.project__filter {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
